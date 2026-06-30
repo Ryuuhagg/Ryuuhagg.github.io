@@ -14,9 +14,10 @@
 </header>
 <nav class="toc">
   <ul>
-    <li><a href="#intro">自己紹介</a></li>
-    <li><a href="#skills">スキル</a></li>
-    <li><a href="#works">作品紹介</a></li>
+    <li><a href="index.html#intro">自己紹介</a></li>
+    <li><a href="index.html#skills">スキル</a></li>
+    <li><a href="index.html#works">作品紹介</a></li>
+    <li><a href="schoolworks.html">課題制作</a></li>
   </ul>
 </nav>
 <section id="intro" class="section intro">
@@ -42,7 +43,7 @@
       </tr>
       <tr>
         <th>得意なこと</th>
-        <th>Unityを用いた基礎的なゲームプログラミング</th>
+        <th>C/C++を用いた基礎的なゲームプログラミング</th>
       </tr>
       <tr>
         <th>好きなゲーム</th>
@@ -77,10 +78,57 @@
 <section id="works" class="section works">
   <h2>作品紹介</h2>
   <div class="work-item">
+    <h3 class="work-title">迷路メーカー</h3>
+    <p class="work-summary">
+      C++で制作した3Dの迷路を探索してゴールを目指すゲームです。<br>
+      プレイヤーは迷路を作ったり作った迷路で遊ぶことができます。
+    </p>
+    <div class="work-images">
+      <img src="img/迷路メーカー_タイトル.png" alt="画像1">
+      <img src="img/迷路メーカー_ゲーム.png" alt="画像2">
+      <img src="img/迷路メーカー_オプション.png" alt="画像3">
+    </div>
+    <hr>
+    <div class="work-content">
+      <div class="work-video">
+        <video src="video/迷路メーカー.mp4" controls></video>
+      </div>
+      <div class="work-text">
+        <p class="tech">C++</p>
+        <p class="explanation">
+          <table border="1">
+            <tr>
+              <th width="200">プラットフォーム</th>
+              <th width="300">PC</th>
+            </tr>
+            <tr>
+              <th>制作人数</th>
+              <th>2人</th>
+            </tr>
+            <tr>
+              <th>制作期間</th>
+              <th>2ヶ月(製作途中)</th>
+            </tr>
+            <tr>
+              <th>担当</th>
+              <th>シーン管理、プレイヤー、UI、サウンド、入力管理システム</th>
+            </tr>
+          </table>
+          <h3>工夫したところ</h3>
+          <ul>
+            <li>設定から<span class="text-accent">キーコンフィグ</span>を変えられるようにしてプレイヤーが自分に合った操作をできるようにした</li>
+            <li><span class="text-accent">入力管理システム</span>を作ったことでキーボードとゲームパッドの両方に対応できるようになった</li>
+            <li>設定をjsonファイルに保存することで、ゲームの設定を<span class="text-accent">次回起動時にも</span>設定内容が維持されるようにした</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="work-item">
     <h3 class="work-title">シューティングゲーム</h3>
     <p class="work-summary">
-      <br>
-      
+      C++で制作したシューティングゲームです。<br>
+      プレイヤーは自機を操作して、敵の攻撃を避けながら撃破し、ハイスコアを目指します。
     </p>
     <div class="work-images">
       <img src="img/シューティングタイトル.png" alt="画像1">
@@ -94,7 +142,7 @@
         <video src="video/シューティング.mp4" controls></video>
       </div>
       <div class="work-text">
-        <p class="tech">C#　Unity</p>
+        <p class="tech">C++</p>
         <p class="explanation">
           <table border="1">
             <tr>
@@ -116,9 +164,9 @@
           </table>
           <h3>工夫したところ</h3>
           <ul>
-            <li>オブジェクトプールを使って再利用することでメモリ確保のコストを削減</li>
-            <li>敵の基底クラスを作成し、敵ごとの行動を派生クラスで実装</li>
-            <li>ヒットストップや画面揺れなどのエフェクトを実装し、プレイフィールの向上を意識</li>
+            <li><span class="text-accent">オブジェクトプール</span>を使って再利用することでメモリ確保のコストを削減</li>
+            <li><span class="text-accent">敵の基底クラス</span>を作成し、敵ごとの行動を派生クラスで実装</li>
+            <li>ヒットストップや画面揺れなどのエフェクトを実装し、<span class="text-accent">プレイフィールの向上</span>を意識</li>
           </ul>
         </p>
       </div>
