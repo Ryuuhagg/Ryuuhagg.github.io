@@ -8,16 +8,16 @@
   <h2>学校課題</h2>
 
   <div class="work-item">
-    <h3 class="work-title">ばね運動ゲーム</h3>
+    <h3 class="work-title">ピボット回転</h3>
     <p class="work-summary">
       学校課題で制作した作品です。<br>
-      ばね運動をテーマに、ベクター処理を使ってばね運動を実装しました。
+      ピボット回転をテーマに、方向転換しながらゴールを目指すゲームを制作しました。
     </p>
     <hr>
 
     <div class="work-content">
       <div class="work-video">
-        <video src="video/課題動画1.mp4" controls></video>
+        <video src="video/pivot回転.mp4" controls></video>
       </div>
 
       <div class="work-text">
@@ -34,19 +34,70 @@
           </tr>
           <tr>
             <th>制作期間</th>
-            <th>3週間</th>
+            <th>3週間(週3時間)</th>
           </tr>
           <tr>
             <th>担当</th>
             <th>全て</th>
           </tr>
         </table>
-
+        <h3>学んだこと</h3>
+        <p>
+          プレイヤーとオブジェクトの位置から相対ベクトルを求め、柱を中心に回転する移動処理の仕方を学べました。
+        </p>
         <h3>工夫したところ</h3>
         <ul>
-          <li>〇〇を実装して、操作しやすくしました。</li>
-          <li>〇〇をクラスで分けて、管理しやすくしました。</li>
-          <li>〇〇を調整して、遊びやすくしました。</li>
+          <li>オブジェクトのマネージャーを作り、複数のオブジェクトを管理しやすくした。</li>
+          <li>回転時にプレイヤーが柱から離れすぎないように、距離が一定以上になったら範囲内に補正する処理を入れた。</li>
+          <li>オブジェクトとの距離を判定する処理をマネージャーにまとめることで、オブジェクト数が増えても管理しやすい構造にした。</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="work-item">
+    <h3 class="work-title">ばね運動ゲーム</h3>
+    <p class="work-summary">
+      学校課題で制作した作品です。<br>
+      ばね運動の仕組みを利用し、プレイヤーを追従するボールを操作してブロックを破壊するゲームを制作しました。
+    </p>
+    <hr>
+
+    <div class="work-content">
+      <div class="work-video">
+        <video src="video/ばね運動ゲーム.mp4" controls></video>
+      </div>
+
+      <div class="work-text">
+        <p class="tech">C++</p>
+
+        <table border="1">
+          <tr>
+            <th width="200">プラットフォーム</th>
+            <th width="300">PC</th>
+          </tr>
+          <tr>
+            <th>制作人数</th>
+            <th>1人</th>
+          </tr>
+          <tr>
+            <th>制作期間</th>
+            <th>3週間(週3時間)</th>
+          </tr>
+          <tr>
+            <th>担当</th>
+            <th>全て</th>
+          </tr>
+        </table>
+        <h3>学んだこと</h3>
+        <p>
+          ベクトルを使用した移動処理や、加加速度計を実装することで、オブジェクトを自然に移動させる方法を学ぶことができました。
+        </p>
+        <h3>工夫したところ</h3>
+        <ul>
+          <li>プレイヤーとボールの位置差から加速度を計算し、ボールがばねで引っ張られるような自然な追従挙動を実現した。</li>
+          <li>ブロックとボールの距離判定では平方根を使わず、二乗同士で比較することで処理負荷を軽減した。</li>
+          <li>ボールとブロックがぶつかったら爆発させることで、見た目で当たったことがわかりやすくなるよう工夫した。</li>
         </ul>
       </div>
     </div>
